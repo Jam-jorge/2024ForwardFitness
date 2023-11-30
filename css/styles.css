@@ -116,8 +116,14 @@ main {
 	border-radius: 8px;
 }
 
+.map {
+	border: 8px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
 /*media query for tablet viewport*/
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 630px), print {
 	
 	/* tablet viewport: show tablet-desktop class, hide mobile*/
 	.tablet-desktop{
@@ -141,24 +147,119 @@ main {
 	nav li a{
 		padding: 0.1em 0.75em;
 	}
-}
-/*media query for tablet viewport end */
+	
+	/*tablet viewport styles for main content area*/
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	
+	#exercises {
+		clear: left;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background: linear-gradient(to right, #ccc, #fff);
+/*		background-color: #f2f2f2;*/
+		padding: 1% 2%;
+	}
 
-/*#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
+	#exercises dt {
+		font-weight: bold;
+	}
+
+	#exercises dd {
+		padding: 0.5% 1% 2% 0;
+	}
+	
+	.tel-num {
+		font-size: 2.25em;
+	}
+	
+	#contact {
+		text-align: center;
+	}
+	
+	.map {
+		width: 600px;
+		height: 900px;
+	}
+	
+}/*media query for tablet viewport end */
+
+/*media query for desktop viewport*/
+@media screen and (min-width: 1015px), print {
+	
+	/*desktop veiwport style*/
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+	
+	
+	nav {
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right;
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	
+	main {
+		clear: both;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+	
+	#weights, #cardio, #training {
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+	
+	#exercises {
+		clear: left;
+	}
+	
+	
+	
+} /*closing desktop viewport */
+
+/*large screen media query*/
+@media screen and (min-width: 1921) {
+
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+		}
+	
+}/*end large media query*/
+
+/* media query print*/
+@media print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
 }
 
-#exercises dt {
-    font-weight: bold;
-}
-
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}*/
 
 .external-link {
     color: #606;
@@ -171,11 +272,7 @@ main {
     text-decoration: none;
 }
 
-.map {
-    border: 8px solid #000;
-	width: 95%;
-	height: 50%;
-}
+
 
 /* Style rules for the footer content */
 footer p {
