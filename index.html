@@ -10,7 +10,7 @@
     <title>Forward Fitness Club</title><!-- comment -->
     <link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
@@ -19,15 +19,27 @@
 <body>
     <div id="container">
         
-        <!-- Header content -->
-        <header>
+		<nav class="mobile-nav">
+			<div  id="menu-links">
+				<a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="classes.html">Classes</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="contact.html">Contact Us</a>
+			</div>
+				<a class="menu-icon">
+					<div>&#9776;</div>
+				</a>
+		</nav>
+		
+        <header id="ffc-logo">
             <a href="index.html">
                 <img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo">
             </a>
         </header>
 
         <!-- Navigation Section -->
-        <nav>
+        <nav class="tablet-desktop">
             <ul>
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="about.html">About Us</a></li> 
@@ -67,13 +79,6 @@
 				</ul>
 			</div>
             
-			<div class="grid">
-			
-			<figure class="frame"></figure>
-				
-			<a href="classes.html"><img src="images/fitness-group.jpg" alt="group of fitness people"></a>	
-			</div>
-			
 			<div class="tablet-desktop">
 				<p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition goals.</p>
 
@@ -81,6 +86,33 @@
 
 				<p>We provide a FREE one-week membership so you can experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to <span class="action">start your free trial!</span></p>
 			</div>
+			
+			<div class="grid">
+			
+			<figure class="frame">
+				
+				<a href="classes.html">
+					<img src="images/fitness-group.jpg" alt="group of fitness people">
+				</a>	
+					<figcaption class="pic-text">Group Fitness</figcaption>
+			</figure>
+				
+				<figure class="frame">
+					<a href="nutrition.html">
+						<img src="images/food-heart.jpg" alt="heathy food">
+					</a>
+					<figcaption class="pic-text">Meal Plans</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="contact.html">
+						<img src="images/personal-trainer.jpg" alt="a personal trainer with a clipboard">
+					</a>
+					
+					<figcaption class="pic-text">Start Today</figcaption>
+				</figure>
+			</div>
+		
 				</main>
 
         <!-- Footer Section -->
